@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cucumber-JVM Html Reports - Feature: Pesquisar produtos </title>
+	<link rel="stylesheet" href="blue/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/skin/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/960.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/text.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="blue/favicon.ico" />
+    <style>
+    .CodeMirror-scroll {
+      height: auto;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+.feature-keyword{font-weight:bold;}
+.feature-description{padding-left:15px;font-style:italic;background-color:beige;}
+.feature-role{font-weight:bold;}
+.feature-action{font-weight:bold;}
+.feature-value{font-weight:bold;}
+.feature-tags{padding-top:10px;padding-left:15px;color:darkblue;}
+.scenario-keyword{font-weight:bold;padding-left:15px;}
+.scenario-scenario_name{padding-left:15px;}
+.step-keyword{font-weight:bold;padding-left:50px;}
+.step-error-message{background-color:#FFEEEE;padding-left:50px;border: 1px solid #D88A8A;}
+.step-duration{float:right;padding-right:15px;}
+.passed{background-color:#C5D88A;}
+.failed{background-color:#D88A8A;}
+.skipped{background-color:#2DEAEC;}
+.undefined{background-color: #ebcc81;}
+
+table.stats-table {
+color:black;
+border-width: 1px;
+border-spacing: 2px;
+border-style: outset;
+border-color: gray;
+border-collapse: collapse;
+background-color: white;
+}
+table.stats-table th {
+color:black;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: #66CCEE;
+-moz-border-radius: ;
+}
+table.stats-table td {
+color:black;
+text-align: center;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: white;
+-moz-border-radius: ;
+}
+
+table.data-table {
+    color: black;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-style: outset;
+    border-color: #d6d6d6;
+    border-collapse: collapse;
+    background-color: beige;
+}
+table.data-table th {
+    color:black;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: #66CCEE;
+}
+table.data-table td {
+    color:black;
+    text-align: center;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: beige;
+}
+
+.data {
+   padding-left:50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.output-data {
+    padding-left:50px;
+    background-color: beige;
+}
+
+.doc-string {
+    width:auto;
+    display:inline-block;
+    margin: 10px auto 10px 70px;
+    padding: 10px;
+    background-color:rgba(255,255,255,0.35);
+    border-radius: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 95%;
+}
+</style>
+
+</head>
+<body id="top">
+	<div id="fullwidth_header">
+		<div class="container_12">
+			<h1 class="grid_4 logo"><a href="feature-overview.html" class='ie6fix'>Cucumber</a></h1>
+			<div class="grid_6" id="nav">
+				<ul>
+                                              <li><a href="/job/autodb-test/42">Back To Jenkins</a></li>
+                    					<li><a href="tag-overview.html">Tag Overview</a></li>
+					<li><a href="feature-overview.html">Feature Overview</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="fullwidth_gradient">
+		<div class="container_12">
+			<div class="grid_9 heading">
+				<h2 id="feature-title">Feature Result for Build: 42</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_12">
+		<div class="grid_12">
+
+            <div>
+                <table class="stats-table">
+                    <tr>
+    <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="5">Steps</th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th id="stats-header-feature">Feature</th>
+    <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed" style="background-color:#C5D88A;">Passed</th>
+    <th id="stats-header-steps-failed" style="background-color:#D88A8A;">Failed</th>
+    <th id="stats-header-steps-skipped" style="background-color:#2DEAEC;">Skipped</th>
+    <th id="stats-header-steps-pending" style="background-color:#ebcc81;">Pending</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+</tr>
+
+                    <tr>
+                        <td><a id="stats-Pesquisar produtos" href="PesquisarCatalogo.feature.html">Pesquisar produtos</a></td>
+                        <td id="stats-number-scenarios-Pesquisar produtos">3</td>
+                        <td id="stats-number-scenarios-passed-Pesquisar produtos">0</td>
+                        <td id="stats-number-scenarios-failed-Pesquisar produtos">3</td>
+                        <td id="stats-number-steps-Pesquisar produtos">15</td>
+                        <td id="stats-number-steps-passed-Pesquisar produtos">3</td>
+                        <td id="stats-number-steps-failed-Pesquisar produtos">3</td>
+                        <td id="stats-number-steps-skipped-Pesquisar produtos">9</td>
+                        <td id="stats-number-steps-pending-Pesquisar produtos">0</td>
+                        <td id="stats-duration-Pesquisar produtos">30 secs and 525 ms</td>
+                        <td id="stats-status-Pesquisar produtos" style="background-color: #D88A8A;">failed</td></tr>
+
+                </table>
+
+            </div>
+
+		<div style="color:black;">
+
+            <div class="feature-tags"></div>
+            <div class="failed"><div class="feature-line"><span class="feature-keyword">Feature:</span> Pesquisar produtos</div></div>
+            <div class="feature-description">Como um usuário do sistema eu quero poder navegar pelos critérios de pesquisa de forma hierárquica para que eu possa consultar os produtos do catálogo.</div>
+
+                            <div class="feature-tags"></div>
+                <div class="failed"><span class="scenario-keyword">Scenario Outline: </span> <span class="scenario-name">Pesquisar produtos</span></div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">que eu esteja na tela de catalogo</span><span class="step-duration">99 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="failed"><span class="step-keyword">And  </span><span class="step-name">clique em "Alfa Romeo" na pesquisa por arvore</span><span class="step-duration">10 secs and 63 ms</span><div class="step-error-message"><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.5.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b8b0689-2b1e-45f4-a4e0-f7464a790fed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at interactions.ValidarCatalogoInteractions.clicarNoMarca(ValidarCatalogoInteractions.java:64)
+	at feature.steps.PesquisaCatalogoSteps.clique_em_na_pesquisa_por_arvore(PesquisaCatalogoSteps.java:25)
+	at ✽.And clique em "Alfa Romeo" na pesquisa por arvore(PesquisarCatalogo.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "2001/" na pesquisa</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "147 937" na arvore</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">o sistema apresenta os produtos na lista de produtos</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="failed"><span class="scenario-keyword">Scenario Outline: </span> <span class="scenario-name">Pesquisar produtos</span></div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">que eu esteja na tela de catalogo</span><span class="step-duration">139 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="failed"><span class="step-keyword">And  </span><span class="step-name">clique em "Audi" na pesquisa por arvore</span><span class="step-duration">10 secs and 37 ms</span><div class="step-error-message"><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.5.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b8b0689-2b1e-45f4-a4e0-f7464a790fed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at interactions.ValidarCatalogoInteractions.clicarNoMarca(ValidarCatalogoInteractions.java:64)
+	at feature.steps.PesquisaCatalogoSteps.clique_em_na_pesquisa_por_arvore(PesquisaCatalogoSteps.java:25)
+	at ✽.And clique em "Audi" na pesquisa por arvore(PesquisarCatalogo.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "2011/" na pesquisa</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "A1 Sportback 8XA" na arvore</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">o sistema apresenta os produtos na lista de produtos</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="failed"><span class="scenario-keyword">Scenario Outline: </span> <span class="scenario-name">Pesquisar produtos</span></div>
+                                  <div class="passed"><span class="step-keyword">When  </span><span class="step-name">que eu esteja na tela de catalogo</span><span class="step-duration">148 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="failed"><span class="step-keyword">And  </span><span class="step-name">clique em "Mercedes-Benz" na pesquisa por arvore</span><span class="step-duration">10 secs and 37 ms</span><div class="step-error-message"><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.5.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b8b0689-2b1e-45f4-a4e0-f7464a790fed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at interactions.ValidarCatalogoInteractions.clicarNoMarca(ValidarCatalogoInteractions.java:64)
+	at feature.steps.PesquisaCatalogoSteps.clique_em_na_pesquisa_por_arvore(PesquisaCatalogoSteps.java:25)
+	at ✽.And clique em "Mercedes-Benz" na pesquisa por arvore(PesquisarCatalogo.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar_left']/div[1]/form/div/div/ul/li[1]/span/span[3]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'vm-soft-devops', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-123.20.1.el7.x86_64', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous6047544762479914716webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+</pre></div></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "2012/" na pesquisa</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">clique em "Sprinter 311 II 906" na arvore</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">o sistema apresenta os produtos na lista de produtos</span><span class="step-duration">0 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                            
+	</div>
+	</div>
+
+
+	<div class="container_12">
+		<div class="grid_12 hr"></div>
+		<div class="grid_12 footer">
+            <p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.23 - 08-04-2015 20:34:23</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</body>

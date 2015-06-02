@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cucumber-JVM Html Reports - Feature: Manter Tipo Serviço </title>
+	<link rel="stylesheet" href="blue/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/skin/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/960.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/text.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="blue/favicon.ico" />
+    <style>
+    .CodeMirror-scroll {
+      height: auto;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+.feature-keyword{font-weight:bold;}
+.feature-description{padding-left:15px;font-style:italic;background-color:beige;}
+.feature-role{font-weight:bold;}
+.feature-action{font-weight:bold;}
+.feature-value{font-weight:bold;}
+.feature-tags{padding-top:10px;padding-left:15px;color:darkblue;}
+.scenario-keyword{font-weight:bold;padding-left:15px;}
+.scenario-scenario_name{padding-left:15px;}
+.step-keyword{font-weight:bold;padding-left:50px;}
+.step-error-message{background-color:#FFEEEE;padding-left:50px;border: 1px solid #D88A8A;}
+.step-duration{float:right;padding-right:15px;}
+.passed{background-color:#C5D88A;}
+.failed{background-color:#D88A8A;}
+.skipped{background-color:#2DEAEC;}
+.undefined{background-color: #ebcc81;}
+
+table.stats-table {
+color:black;
+border-width: 1px;
+border-spacing: 2px;
+border-style: outset;
+border-color: gray;
+border-collapse: collapse;
+background-color: white;
+}
+table.stats-table th {
+color:black;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: #66CCEE;
+-moz-border-radius: ;
+}
+table.stats-table td {
+color:black;
+text-align: center;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: white;
+-moz-border-radius: ;
+}
+
+table.data-table {
+    color: black;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-style: outset;
+    border-color: #d6d6d6;
+    border-collapse: collapse;
+    background-color: beige;
+}
+table.data-table th {
+    color:black;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: #66CCEE;
+}
+table.data-table td {
+    color:black;
+    text-align: center;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: beige;
+}
+
+.data {
+   padding-left:50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.output-data {
+    padding-left:50px;
+    background-color: beige;
+}
+
+.doc-string {
+    width:auto;
+    display:inline-block;
+    margin: 10px auto 10px 70px;
+    padding: 10px;
+    background-color:rgba(255,255,255,0.35);
+    border-radius: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 95%;
+}
+</style>
+
+</head>
+<body id="top">
+	<div id="fullwidth_header">
+		<div class="container_12">
+			<h1 class="grid_4 logo"><a href="feature-overview.html" class='ie6fix'>Cucumber</a></h1>
+			<div class="grid_6" id="nav">
+				<ul>
+                                              <li><a href="/job/Execucao de Teste Funcionais Corsan/114">Back To Jenkins</a></li>
+                    					<li><a href="tag-overview.html">Tag Overview</a></li>
+					<li><a href="feature-overview.html">Feature Overview</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="fullwidth_gradient">
+		<div class="container_12">
+			<div class="grid_9 heading">
+				<h2 id="feature-title">Feature Result for Build: 114</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_12">
+		<div class="grid_12">
+
+            <div>
+                <table class="stats-table">
+                    <tr>
+    <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="5">Steps</th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th id="stats-header-feature">Feature</th>
+    <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed" style="background-color:#C5D88A;">Passed</th>
+    <th id="stats-header-steps-failed" style="background-color:#D88A8A;">Failed</th>
+    <th id="stats-header-steps-skipped" style="background-color:#2DEAEC;">Skipped</th>
+    <th id="stats-header-steps-pending" style="background-color:#ebcc81;">Pending</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+</tr>
+
+                    <tr>
+                        <td><a id="stats-Manter Tipo Serviço" href="test03ManterTipoServico.feature.html">Manter Tipo Serviço</a></td>
+                        <td id="stats-number-scenarios-Manter Tipo Serviço">18</td>
+                        <td id="stats-number-scenarios-passed-Manter Tipo Serviço">18</td>
+                        <td id="stats-number-scenarios-failed-Manter Tipo Serviço">0</td>
+                        <td id="stats-number-steps-Manter Tipo Serviço">102</td>
+                        <td id="stats-number-steps-passed-Manter Tipo Serviço">102</td>
+                        <td id="stats-number-steps-failed-Manter Tipo Serviço">0</td>
+                        <td id="stats-number-steps-skipped-Manter Tipo Serviço">0</td>
+                        <td id="stats-number-steps-pending-Manter Tipo Serviço">0</td>
+                        <td id="stats-duration-Manter Tipo Serviço">54 secs and 286 ms</td>
+                        <td id="stats-status-Manter Tipo Serviço" style="background-color: #C5D88A;">passed</td></tr>
+
+                </table>
+
+            </div>
+
+		<div style="color:black;">
+
+            <div class="feature-tags"></div>
+            <div class="passed"><div class="feature-line"><span class="feature-keyword">Funcionalidade:</span> Manter Tipo Serviço</div></div>
+            <div class="feature-description">Como um administrador do sistema
+<br/>Eu quero poder manter os tipos de serviço
+<br/>Para que eu possa dar manutenção no sistema</div>
+
+                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">672 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">1 sec and 39 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Trocar lampada sala B19"</span><span class="step-duration">232 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Elétrica"</span><span class="step-duration">364 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">130 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">1 sec and 58 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem "Registro salvo com sucesso!".</span><span class="step-duration">46 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 683 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">922 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Ajustar tomada"</span><span class="step-duration">121 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Elétrica"</span><span class="step-duration">285 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">71 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">1 sec and 123 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem "Registro salvo com sucesso!".</span><span class="step-duration">72 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">706 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">873 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Ajustar torneira"</span><span class="step-duration">138 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Hidráulica"</span><span class="step-duration">349 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Inativo"</span><span class="step-duration">330 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">855 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem "Registro salvo com sucesso!".</span><span class="step-duration">29 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">849 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">772 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Ajustar Mesa Recepção"</span><span class="step-duration">154 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Marcenaria"</span><span class="step-duration">433 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">157 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">880 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem "Registro salvo com sucesso!".</span><span class="step-duration">33 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 7 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">756 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Ajustar vaso"</span><span class="step-duration">130 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Hidráulica"</span><span class="step-duration">356 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Inativo"</span><span class="step-duration">308 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">742 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem "Registro salvo com sucesso!".</span><span class="step-duration">34 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Bloq exclusão Tipo de Solicitação.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Solicitação"</span><span class="step-duration">820 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Elétrica"</span><span class="step-duration">194 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao excluir</span><span class="step-duration">273 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">confirma</span><span class="step-duration">1 sec and 351 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem de bloqueio "Não é possível excluir o registro, pois o mesmo está sendo utilizado por outro registro no sistema.".</span><span class="step-duration">54 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Campo Nome Obrigatório Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 88 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">1 sec and 72 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado ""</span><span class="step-duration">54 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Elétrica"</span><span class="step-duration">385 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">99 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">239 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe o alerta de nome obrigatorio "O campo NOME é obrigatório".</span><span class="step-duration">73 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Campo Nome Obrigatório Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">926 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">794 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado "Texto qualquer"</span><span class="step-duration">152 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">selecionar o tipo solicitacao "Selecione"</span><span class="step-duration">97 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">88 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">250 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe o alerta de nome obrigatorio "O campo 'Tipo de Solicitação' é obrigatório".</span><span class="step-duration">46 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Cancelamento Incluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">891 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">aciona o botao novo</span><span class="step-duration">1 sec and 345 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">preenche o campo nome com o dado ""</span><span class="step-duration">51 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">88 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao cancelar</span><span class="step-duration">1 sec and 258 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o usuario visualiza a tela "http://192.168.0.133/SisSer/TipoServico/Index".</span><span class="step-duration">40 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Pesquisar Nome Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 75 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Ajustar torneira"</span><span class="step-duration">325 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a lista de resultados que atendem o parametro "Ajustar torneira".</span><span class="step-duration">47 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Pesquisar Status Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">853 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">o campo status e alterado para "Inativo"</span><span class="step-duration">763 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe os resultados que atendem o parametro "Inativo".</span><span class="step-duration">79 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Nenhum registro encontrado Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 117 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Texto Qualquer"</span><span class="step-duration">352 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a informacao "Nenhum registro encontrado.".</span><span class="step-duration">36 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Acionar o botão Limpar Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 7 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Eletri"</span><span class="step-duration">475 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">o campo status e alterado para "Inativo"</span><span class="step-duration">505 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao limpar</span><span class="step-duration">258 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema limpa os filtros.</span><span class="step-duration">42 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Editar Nome Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 48 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Trocar lampada sala B19"</span><span class="step-duration">740 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona editar</span><span class="step-duration">270 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">o usuario edita o campo nome para "Trocar lampada sala D50"</span><span class="step-duration">982 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">1 sec and 102 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem de edicao "Registro alterado com sucesso!".</span><span class="step-duration">61 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Editar Status Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">1 sec and 41 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Ajustar torneira"</span><span class="step-duration">769 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona editar</span><span class="step-duration">238 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">status "Ativo"</span><span class="step-duration">1 sec and 47 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">1 sec and 272 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem de edicao "Registro alterado com sucesso!".</span><span class="step-duration">42 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Editar Tipo de Solicitação do Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">793 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Ajustar Mesa Rece"</span><span class="step-duration">679 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona editar</span><span class="step-duration">196 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">e edita o Tipo de Solicitacao para "Elétrica"</span><span class="step-duration">1 sec and 194 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona o botao salvar</span><span class="step-duration">1 sec and 234 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem de edicao "Registro alterado com sucesso!".</span><span class="step-duration">54 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Cancelar exclusão Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">843 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Ajustar tornei"</span><span class="step-duration">670 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona excluir</span><span class="step-duration">251 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">cancela</span><span class="step-duration">449 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o usuario visualiza a tela "http://192.168.0.133/SisSer/TipoServico".</span><span class="step-duration">41 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Esquema do Cenário: </span> <span class="scenario-name">Excluir Tipo de Serviço.</span></div>
+                                  <div class="passed"><span class="step-keyword">Dado  </span><span class="step-name">um usuario acessa a tela "Tipo Serviço"</span><span class="step-duration">845 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Quando  </span><span class="step-name">preenche o filtro de pesquisa com o "Trocar lampada sala"</span><span class="step-duration">634 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">aciona excluir</span><span class="step-duration">235 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">E  </span><span class="step-name">confirma</span><span class="step-duration">1 sec and 95 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">Então  </span><span class="step-name">o sistema exibe a mensagem de edicao "Registro excluído com sucesso.".</span><span class="step-duration">37 ms</span></div>
+                    
+                                      <div class="output-data"></div>
+                            
+	</div>
+	</div>
+
+
+	<div class="container_12">
+		<div class="grid_12 hr"></div>
+		<div class="grid_12 footer">
+            <p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.23 - 24-03-2015 14:55:23</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</body>

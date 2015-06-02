@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="softApp">
+
+<div ng-controller="UserCreateCtrl">
+  <p>Name: <input type="text" ng-model="user.name"></p>
+  <p>Age: <input type="text" ng-model="user.age"></p>
+  <p><button ng-click="save()" >Save</button></p>
+</div>
+<div ng-controller="UserListCtrl">
+	<button ng-click="list()" >List</button>
+	<ul ng-repeat="user in users">
+		<li>{{user.name}} {{user.age}} anos</li>
+	</ul>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="services.js"></script>
+<script src="controllers.js"></script>
+
+</body>
+</html>
