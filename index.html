@@ -122,13 +122,37 @@ Os dados são armazenados em banco de dados
                 </section>
                 <section>
                      <h2> Zabbix Server</h2>
+                     <aside class="notes">O servidor Zabbix coleta dados para o monitoramento sem agentes e de
+agentes. Quando alguma anormalidade é detectada, alertas são emitidos
+visualmente e através de uso de sistemas de comunicação como email
+e SMS. O
+servidor Zabbix mantém histórico dos dados coletados em banco de dados (Oracle,
+MySQL e PostgreSQL), de onde são gerados gráficos, painéis de acompanhamento
+e slideshows
+que mostram informações de forma alternada. A penas o servidor
+Zabbix é obrigatoriamente instalado em sistemas Unix ou Linux.
+                    </aside>
                 </section>
                 <section>
                      <h2> Zabbix Proxy</h2>
+                     <aside class="notes">
+É uma parte opcional da implantação do Zabbix. O Proxy coleta dados de
+desempenho e disponibilidade, em nome do Zabbix Server. Todos os dados
+coletados localmente são transferidos para o Zabbix Server Proxy. O Zabbix Proxy é
+uma solução ideal para um controle centralizado de locais remotos, filiais, não
+havendo a necessidade dos administradores de redes locais;
+                    </aside>
                 </section>
                 <section>
                      <h2> Zabbix Agent</h2>
+<aside class="notes">
+O agente Zabbix é instalado nos hosts e permite coletar métricas comuns específicas
+de um sistema operacional, como CPU e memória . Além disso, o
+agente Zabbix permite a coleta de métricas personalizadas com uso de scripts ou
+programas externos permitindo a coleta de métricas complexas e até tomada de
+ações diretamente no próprio agente Zabbix.
                 </section>
+</aside>
             </section>           
 			<section>
                 <section>
@@ -162,6 +186,12 @@ Os dados são armazenados em banco de dados
                      <video autoplay muted>
                         <source src="images/video.mp4">
                     </video>
+<aside class="notes">
+Permite fácil acesso aos dados de monitoração e configuração do Zabbix em
+qualquer lugar e em qualquer plataforma. A interface é uma parte do servidor
+Zabbix, e é geralmente (mas não necessariamente) executada na mesma máquina
+física como uma execução do servidor Zabbix.
+</aside>
                 </section>
                 <section>
                     <h2> Templates prontas</h2>
@@ -206,6 +236,14 @@ Os dados são armazenados em banco de dados
                      <h3> Comparação com as ferramentas: </h3>
 					 <img src="images/nagios.png">
 					 <img src="images/cacti.png">
+<aside class="notes">
+O grande diferencial entre esses é que o Zabbix consegue agregar valores
+das duas ferramentas, Nagios e Cacti. Pode ser utilizado para monitorar diversos
+outros sistemas, como servidores de email,
+Squid, servidores web, etc.Poder de
+geração de gráfico muito grande, basta que se tenha uma fonte de dados para gerar
+seus gráficos.
+</aside>
                 </section>
             </section>
 			<section>                
