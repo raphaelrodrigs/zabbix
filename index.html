@@ -1,57 +1,46 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-    <title>Zabbix - Gerência de Redes</title>
+		<title>reveal.js - The HTML Presentation Framework</title>
 
-    <meta name="description" content="Zabbix - Trabalho Gerência de Redes">
-    <meta name="author" content="Raphael Rodrigues">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <style type="text/css">
-        .book {
-            text-indent: 130px;
-            background-position: 0px 6px;
-            line-height: 160px !important;
-            background-repeat: no-repeat;
-            list-style: none;
-            padding: 0 !important;
-            margin: 0 0 10px 0 !important;
-        }
-    </style>
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-    <script>
-    if (window.location.search.match(/print-pdf/gi)) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'css/print/pdf.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    }
-    </script>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 
-    <!--[if lt IE 9]>
-        <script src="lib/js/html5shiv.js"></script>
-        <![endif]-->
-</head>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<body>
-    <div class="reveal">
-        <!-- Any section element inside of this container is displayed as a slide -->
-        <div class="slides">    
-            <section>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				 <section>
                 <h2>Gerência de Redes</h2>
                     <img src="images/zabbix.png">
                 <p>
@@ -184,11 +173,10 @@ ações diretamente no próprio agente Zabbix.
 </aside>
             </section>           
             <section>
-                <section>
-                     <h2> Interface Web</h2>
-                     <video autoplay muted>
-                        <source src="images/video.mp4">
-                    </video>
+                <section data-background-video="content/video.mp4">
+                <h2>
+                    <font color='#CA322F' class="fragment">  Interface Web</font>
+                </h2>
 <aside class="notes">
 Permite fácil acesso aos dados de monitoração e configuração do Zabbix em
 qualquer lugar e em qualquer plataforma. A interface é uma parte do servidor
@@ -205,7 +193,7 @@ física como uma execução do servidor Zabbix.
                     <img src="images/dashboard.png">
                 </section>
                 <section>
-                    <h2> Dados de monitoramento</h2>
+                    <h3> Dados de monitoramento</h3>
                     <img src="images/dadosmonitorados.png">
                 </section>
                 <section>
@@ -268,64 +256,37 @@ seus gráficos.
                         
                 </section>
             </section>
-        </div>
-    </div>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-    <script>
-    // Full list of configuration options available here:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        slideNumber: true,
+			</div>
 
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-        //transition: 'default', // default/none/fade/slide/convex/concave/zoom
-        
-        // Parallax scrolling
-        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-        // parallaxBackgroundSize: '2100px 900px',
+		</div>
 
-        // Optional libraries used to extend on reveal.js
-        dependencies: [{
-            src: 'lib/js/classList.js',
-            condition: function() {
-                return !document.body.classList;
-            }
-        }, {
-            src: 'plugin/markdown/marked.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/markdown/markdown.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/highlight/highlight.js',
-            async: true,
-            callback: function() {
-                hljs.initHighlightingOnLoad();
-            }
-        }, {
-            src: 'plugin/zoom-js/zoom.js',
-            async: true,
-            condition: function() {
-                return !!document.body.classList;
-            }
-        }, {
-            src: 'plugin/notes/notes.js',
-            async: true,
-            condition: function() {
-                return !!document.body.classList;
-            }
-        }]
-    });
-    </script>
-</body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
